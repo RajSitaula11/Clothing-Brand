@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Marvellous Clothes</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/image.png" alt="Marvellous Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dresses.html">Dresses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="container">
+        <img src="images/sales.jpg" alt="Sale Image">
+        <h2>Ready to purchase the items? Join us for more benefits.</h2>
+        <h2>Complete the form below for exciting news and discounts</h2>
+        <form>
+            <legend><h2>Fill the following form</h2></legend> 
+            <fieldset>
+                
+                <label for="fName">First Name:</label>
+                <input type="text" name="fName" id="fName">
+                <label for="lName">Last Name:</label>
+                <input type="text" name="lName" id="lName">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <small>(437) 878-4742</small>
+                <section class="gender">
+                    <p>Gender:</p>
+                    <div>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                </section>
+                <p>I would like to receive information about:</p>
+                <div>
+                    <input type="checkbox" name="grpft" value="grpft" id="grpft">
+                    <label for="grpft">Jeans and T-shirts</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="prtrain" id="prtrain" value="prtrain">
+                    <label for="prtrain">Pajamas and Skirts</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="nutr" id="nutr" value="nutr">
+                    <label for="nutr">Kids Items</label>
+                </div>
+                <label for="reference">Referral Source:</label>
+                <select name="reference" id="reference">
+                    <option value="ad">Google</option>
+                    <option value="friend">Yahoo</option>
+                    <option value="google">Facebook</option>
+                    <option value="social">YouTube</option>
+                    <option value="other" selected>Other</option>
+                </select>
+                <label for="question">Question about the fashions and brand items?</label>
+                <textarea name="question" id="question" cols="25" rows="3"></textarea>
+                <div id="form-btn">
+                    <input type="submit" id="submit" class="btn" value="Submit">
+                    <input type="reset" id="reset" class="btn" value="Reset">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div id="copyright">
+            <h3>Connect with Us!</h3>
+            <p>Email: <a href="mailto:marvellous@brand.com">marvellous@brand.com</a></p>
+            <p>Phone: <a href="tel:4378784742">(437) 878-4742</a></p>
+        </div>
+        <div id="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook logo.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram-icon-logo-symbol-free-png.png" alt="Instagram"></a>
+            <a href="https://twitter.com/"><img src="images/twitter ogo.png" alt="Twitter"></a>
+        </div>
+        <p>&copy; Copyright 2024. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
