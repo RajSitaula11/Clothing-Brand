@@ -1,0 +1,193 @@
+/* General Styles */
+html {
+    font-size: 16px; /* 1rem = 16px */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem; /* 10px */
+    margin: 0;
+}
+
+header img {
+    border-radius: 50%;
+    width: 5rem; /* 80px */
+    height: 5rem;
+}
+
+nav {
+    background-color: #495057;
+    padding: 0.625rem 0; /* 10px */
+    text-align: center;
+}
+
+nav h1 a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.9375rem; /* 15px */
+    font-size: 1rem;
+}
+
+nav h1 a:hover {
+    text-decoration: underline;
+}
+
+#container {
+    max-width: 75rem; /* 1200px */
+    margin: 1.25rem auto; /* 20px */
+    padding: 1.25rem; /* 20px */
+    background-color: #ffffff;
+    box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
+    border-radius: 0.5rem; /* 8px */
+}
+
+/* Main Content */
+main {
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.clothes {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.25rem 0; /* 20px */
+    flex-wrap: wrap;
+}
+
+.clothes img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.items {
+    list-style-type: square;
+    margin: 1.25rem 0; /* 20px */
+    padding-left: 1.25rem; /* 20px */
+}
+
+.items li {
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+.desktop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem; /* 10px */
+    justify-content: center;
+}
+
+.desktop img {
+    max-width: 32%;
+    height: auto;
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1.25rem 0; /* 20px */
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0.625rem; /* 10px */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    margin: 0.625rem; /* 10px */
+    vertical-align: middle;
+    width: 2.5rem; /* 40px */
+    height: 2.5rem;
+}
+
+footer p {
+    margin: 0.3125rem 0; /* 5px */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* 1rem = 14px */
+    }
+
+    header h1 {
+        flex-direction: column;
+        gap: 0.3125rem; /* 5px */
+    }
+
+    nav h1 a {
+        font-size: 0.875rem; /* 14px */
+        margin: 0 0.625rem; /* 10px */
+    }
+
+    #container {
+        padding: 1rem; /* 16px */
+    }
+
+    .clothes img {
+        max-width: 100%;
+    }
+
+    .desktop img {
+        max-width: 48%; /* 2 images per row */
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px; /* 1rem = 12px */
+    }
+
+    header img {
+        width: 4rem; /* 64px */
+        height: 4rem;
+    }
+
+    nav h1 a {
+        font-size: 0.75rem; /* 12px */
+        margin: 0 0.3125rem; /* 5px */
+    }
+
+    .desktop img {
+        max-width: 100%; /* 1 image per row */
+    }
+
+    .clothes img {
+        max-width: 100%;
+    }
+}
